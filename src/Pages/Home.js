@@ -1,22 +1,18 @@
 import GoogleLogin from 'react-google-login';
 import { useDispatch, useSelector } from 'react-redux'
-import { selectSignedIn, setSignedIn, setUserData } from '../userSlice';
+import { selectSignedIn, selectUserData, setSignedIn, setUserData } from '../userSlice';
 import Dashboard from './Dashboard'
 
 const Home = () => {
 
     const dispatch = useDispatch()
     const isSignedIn = useSelector(selectSignedIn)
+    const userData = useSelector(selectUserData)
 
     const responseGoogle = (res) => {
         console.log(res);
         dispatch(setSignedIn(true))
         dispatch(setUserData(res.profileObj))
-    }
-
-    const handleLogout = () => {
-        dispatch(setSignedIn(false))
-        dispatch(setUserData(''))
     }
 
 
@@ -25,7 +21,7 @@ const Home = () => {
 
     return (
         <>
-
+            {/* <Dashboard /> */}
             {!isSignedIn ?
                 <div className='home'><GoogleLogin
                     clientId={googleId}
@@ -33,7 +29,7 @@ const Home = () => {
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle}
                     cookiePolicy={'single_host_origin'}
-                    isSignedIn={true}
+                    isSignedIn={false}
                 /> </div> : <>
                     <Dashboard />
                 </>

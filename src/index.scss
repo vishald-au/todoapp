@@ -5,11 +5,119 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #25282a;
+  background: #1c1f22;
   color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ctrl-width {
+  width: 4.5rem;
+}
+
+.mainSidebar {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh !important;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, .1);
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .nav-link:hover, 
+.nav-pills .show>.nav-link {
+  background: #A72D29;
+}
+
+.nav-pills .nav-link {
+  color:white;
+  border-radius: 0;
+  width: 100%;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #2f3133 !important
+}
+.border-top {
+  border-top: 1px solid #2f3133 !important
+}
+
+.logo-area{
+  text-align: center;
+  font-size: 32px;
+  color: #ffeb3b;
+  pointer-events: none;
+  background: transparent;
+  border: 0;
+}
+
+.nav-profile {
+  background: transparent;
+  border: 0;
+  width: 100%;
+}
+
+.recent_activity {}
+
+.frame__main {
+  padding-left: 5.5rem;
+  width: 100vw;
+  overflow-x: hidden;
+  padding-right: 1.1rem;
+}
+
+.echarts-for-react  {
+  height: 440px !important;
+  width: 600px;
+}
+
+.stats {}
+
+.sidebar {
+  position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9;
+}
+
+.center-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.list-group-item-action:hover {
+  background: rgb(30, 34, 37) !important;
+}
+
+
+@media (max-width:560px) {
+  .mobilePadding {
+    padding: 30px 30px 0;
+  }
+  .frame__main {padding-left: 4.5rem;
+    padding-right:0;
+  }
+  .noMarginMobile {margin: 0;padding: 0;}
+  .echarts-for-react {
+      height: 440px !important;
+      width: 380px;
+  }
+  .mainSidebar {padding-bottom: 15vh;}
 }
