@@ -4,144 +4,144 @@
       "id": 1,
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 2,
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "pending",
+      "priority": "0",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 3,
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "med",
-      "status": "pending",
+      "priority": "1",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 4,
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 5,
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 6,
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "med",
-      "status": "complete",
+      "priority": "1",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 7,
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 8,
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 9,
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 10,
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 11,
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 12,
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "med",
-      "status": "complete",
+      "priority": "1",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 13,
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 14,
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 15,
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "high",
-      "status": "pending",
+      "priority": "2",
+      "status": "0",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 16,
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 17,
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     },
     {
       "id": 18,
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "low",
-      "status": "complete",
+      "priority": "0",
+      "status": "1",
       "duedate": "2022-04-23T18:25:43.511Z"
     }
   ]

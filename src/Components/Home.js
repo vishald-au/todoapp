@@ -21,8 +21,8 @@ const Home = () => {
 
     return (
         <>
-            {/* <Dashboard /> */}
-            {!isSignedIn ?
+            <Dashboard />
+            {/*             {!isSignedIn ?
                 <div className='home'><GoogleLogin
                     clientId={googleId}
                     buttonText="Login with Google"
@@ -33,9 +33,7 @@ const Home = () => {
                 /> </div> : <>
                     <Dashboard />
                 </>
-
-
-            }
+            } */}
 
         </>
     )

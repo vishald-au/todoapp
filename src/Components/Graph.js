@@ -71,15 +71,15 @@ const Graph: React.FC = () => {
 
         <div className='row m-0'>
             <div className='col-sm-12 col-md-4 center-center mobilePadding'>
-                <ul class="list-group mb-2 list-group-item-action">
+                <ul className='list-group mb-2 list-group-item-action'>
                     <h2 className='text-light'>Today's Stats</h2>
-                    <li class="list-group-item disabled bg-dark d-flex text-light justify-content-between align-items-center"><span class="">{newDate}</span></li>
-                    <li class="list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center">Total Tasks <span class="">100</span></li>
-                    <li class="list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center">High Priority <span class="">14</span></li>
-                    {/* <li class="list-group-item bg-dark link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center">Med Priority <span class="">14</span></li>
-                    <li class="list-group-item bg-dark link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center">Low Priority <span class="">14</span></li> */}
-                    <li class="list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center">Completed <span class="">14</span></li>
-                    {/* <li class="list-group-item bg-dark link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center">InCompleted <span class="">14</span></li> */}
+                    <li className='list-group-item disabled bg-dark d-flex text-light justify-content-between align-items-center'><span className=''>{newDate}</span></li>
+                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Total Tasks <span className=''>100</span></li>
+                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>High Priority <span className=''>14</span></li>
+                    {/* <li className='list-group-item bg-dark link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Med Priority <span className=''>14</span></li>
+                    <li className='list-group-item bg-dark link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Low Priority <span className=''>14</span></li> */}
+                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Completed <span className=''>14</span></li>
+                    {/* <li className='list-group-item bg-dark link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>InCompleted <span className=''>14</span></li> */}
                 </ul>
 
             </div>
