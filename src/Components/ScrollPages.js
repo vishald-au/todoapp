@@ -4,33 +4,42 @@ import Add from './Add'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 
-const ScrollPages = ({ Route }) => {
+const ScrollPages = ({ Route, NavLink }) => {
 
     axios.defaults.baseURL = 'http://localhost:5000'
 
-    const [todoData, setTodoData] = useState()
+    const [todoData, setTodoData] = useState(false)
+    const [isLoading, setLoading] = useState(true)
 
-    const getTodo = () => {
+
+
+    useEffect(() => {
         axios.get('/todos').then(
             (res) => {
                 console.log(res.data);
                 setTodoData(res.data);
+                setLoading(false);
             }
         )
-    }
-
-    useEffect(() => {
-        getTodo()
     }, [])
 
+    if (isLoading) {
+        return <>Loading...</>
+    }
 
-
+    const allValues = {
+        all: todoData.length,
+        high: todoData.filter((highitem) => highitem.priority == 2).length,
+        med: todoData.filter((highitem) => highitem.priority == 1).length,
+        low: todoData.filter((highitem) => highitem.priority == 0).length,
+        comp: todoData.filter((highitem) => highitem.status == 1).length
+    }
 
     return (
         <>
             {/*  <button onClick={getTodo}>GET DATA</button> */}
             <Route path='/all'>
-                <List />
+                <List NavLink={NavLink} todoData={todoData} allValues={allValues} />
             </Route>
             <Route path='/add'>
                 <Add />
@@ -51,7 +60,7 @@ const ScrollPages = ({ Route }) => {
                 Settings
             </Route>
             <Route exact path='/'>
-                <Main todoData={todoData} />
+                <Main todoData={todoData} allValues={allValues} />
             </Route>
         </>
     )

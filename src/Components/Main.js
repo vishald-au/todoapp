@@ -1,15 +1,15 @@
 import Graph from './Graph'
 import Recent from './Recent'
 
-const Main = ({ todoData }) => {
+const Main = ({ todoData, allValues }) => {
 
 
 
 
     return (
         <>
-            <Graph />
-            <Recent todoData={todoData} />
+            <Graph allValues={allValues} />
+            <Recent todoData={todoData} allValues={allValues} />
         </>
     )
 }

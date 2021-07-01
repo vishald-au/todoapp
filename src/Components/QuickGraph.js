@@ -31,7 +31,7 @@ const Graph: React.FC = ({ allValues }) => {
                 name: 'Todo Stats',
                 type: 'pie',
                 radius: '85%',
-                center: ['50%', '50%'],
+                center: ['40%', '50%'],
                 data: [
                     /* { value: allValues.all, name: 'All' }, */
                     { value: allValues.high, name: 'High' },
@@ -52,7 +52,7 @@ const Graph: React.FC = ({ allValues }) => {
                     length2: 20
                 },
                 itemStyle: {
-                    color: '#c23531',
+                    color: 'orange',
                     shadowBlur: 50,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
                 },
@@ -70,18 +70,7 @@ const Graph: React.FC = ({ allValues }) => {
     return (
 
         <div className='row m-0'>
-            <div className='col-sm-12 col-md-4 center-center mobilePadding'>
-                <ul className='list-group mb-2 list-group-item-action'>
-                    <h2 className='text-light'>Today's Stats</h2>
-                    <li className='list-group-item disabled bg-dark d-flex text-light justify-content-between align-items-center'><span className=''>{newDate}</span></li>
-                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Total Tasks <span className=''>{allValues.all}</span></li>
-                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>High Priority <span className=''>{allValues.high}</span></li>
-                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Others<span className=''>{allValues.med + allValues.low}</span></li>
-                    <li className='list-group-item bg-dark disabled link-light list-group-item-action bg-dark d-flex justify-content-between align-items-center'>Completed <span className=''>{allValues.comp}</span></li>
-                </ul>
-
-            </div>
-            <div className='col-sm-12 col-md-8 noMarginMobile'>
+            <div className='col-sm-12 col-md-12 noMarginMobile'>
                 <ReactECharts option={options} />
             </div>
         </div>

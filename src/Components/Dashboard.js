@@ -14,7 +14,7 @@ const Dashboard = () => {
                 <Sidebar NavLink={NavLink} />
                 <div className='frame__main'>
                     <Switch>
-                        <ScrollPages Route={Route} />
+                        <ScrollPages Route={Route} NavLink={NavLink} />
                     </Switch>
                 </div>
             </Router>
