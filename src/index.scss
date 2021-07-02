@@ -586,6 +586,20 @@ $grey: rgba(255,255,255,.05);
   border-radius: 15px;
 }
 
+.calPage {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.font-size-small {font-size: 12px;}
+.font-size-small ul li {cursor: pointer;}
+
+
+
 
 @media (max-width:560px) {
   .mobilePadding {

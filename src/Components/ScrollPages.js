@@ -3,6 +3,8 @@ import List from './List'
 import Add from './Add'
 import Loading from './Loading'
 import Profile from './Profile'
+import CalendarPage from './CalendarPage'
+import Settings from './Settings'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 
@@ -54,13 +56,13 @@ const getData = () => {
                 Search
             </Route>
             <Route path='/calendar'>
-                Calendar
+                <CalendarPage />
             </Route>
             <Route path='/profile'>
                 <Profile />
             </Route>
             <Route path='/settings'>
-                Settings
+                <Settings />
             </Route>
             <Route exact path='/'>
                 <Main todoData={todoData} allValues={allValues} />
