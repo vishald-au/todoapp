@@ -516,8 +516,31 @@ $grey: rgba(255,255,255,.05);
   margin-bottom: 10px;
 }
 
+.bg-blur {
+  backdrop-filter: blur(7px);
+}
 
+.modal-content button{
+  /* filter: invert(1); */
+}
+.modal-content {
+  border-radius: 10px;
+}
 
+.modal.active{
+  display: block;
+}
+.modal-body p{
+  font-size: 14px;
+}
+.custFont {
+  font-size: 16px;
+}
+
+.assignBack {
+  float: right;
+  color:rgba(255, 255, 255, .5);
+}
 @media (max-width:560px) {
   .mobilePadding {
     padding: 30px 30px 0;
