@@ -99,7 +99,7 @@ body {
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .list-group-item-action:hover {
@@ -546,6 +546,26 @@ $grey: rgba(255,255,255,.05);
   max-width: 30px;
 }
 
+.logoStyle {
+  max-width: 45px;
+  margin-bottom: 20px;
+  filter: grayscale(1);
+}
+
+.googleStyle div {
+  padding: 10px !important;
+}
+.googleStyle div,
+.googleStyle {
+  border-radius: 20px !important;
+}
+.googleStyle {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  border: 0 !important;
+  background: #a82e28 !important;
+  color: white !important;
+  padding: 0 7px 0 0 !important;
+}
 
 @media (max-width:560px) {
   .mobilePadding {
