@@ -23,7 +23,7 @@ const Sidebar = ({ NavLink }) => {
         <div className='sidebar'>
             <div className='mainSidebar'>
                 <div className='d-flex flex-column flex-shrink-0 bg-dark ctrl-width'>
-                    <button className='d-block p-3 link-light text-decoration-none logo-area'><RiHomeFill /></button>
+                    <button className='d-block p-3 link-light text-decoration-none logo-area'><img className='imgLogo' src='./img/t-logo.png' alt='Logo' /></button>
                     <ul className='nav nav-pills nav-flush flex-column mb-auto text-center'>
                         <li className='nav-item'><NavLink exact to="/" activeClassName='active' className='nav-link py-3 border-bottom'><MdDashboard /></NavLink></li>
                         <li className='nav-item'><NavLink exact to="/all" activeClassName='active' className='nav-link py-3 border-bottom'><VscListSelection /></NavLink></li>

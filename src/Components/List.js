@@ -80,7 +80,7 @@ const List = ({ todoData, allValues, getData }) => {
                                         <td className='modifyTableTD'>{item.priority == 2 ? <span className='priorityBasic pb-high'>H</span> : (item.priority == 1) ? <span className='priorityBasic pb-med'>M</span> : <span className='priorityBasic pb-low'>L</span>}</td>
                                         <td scope='col-6'>#{item.id} {item.title}</td>
                                         <td><Moment date={item.duedate} fromNow /></td>
-                                        <td className='text-right'><button onClick={() => handleStatus(item)} className='markButton'><GoCheck /></button></td>
+                                        <td className='text-right newHover'><button onClick={() => handleStatus(item)} className='markButton'><GoCheck /></button></td>
                                     </tr>
 
 

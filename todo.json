@@ -108,7 +108,7 @@
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 0,
+      "status": 1,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 14
     },
