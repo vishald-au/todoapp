@@ -3,10 +3,11 @@ import { MdAdd } from 'react-icons/md'
 import { useState } from 'react';
 import Moment from 'react-moment';
 import QuickGraph from './QuickGraph'
+import axios from 'axios';
 
 
 
-const List = ({ NavLink, todoData, allValues }) => {
+const List = ({ todoData, allValues, getData }) => {
 
 
     const filterComplete = () => {
@@ -22,18 +23,22 @@ const List = ({ NavLink, todoData, allValues }) => {
         )
     }
 
-    /* const handleStatus = (id) => {
-       
-        settodoData(todoData.map((item) =>
-            item.id === id ? { ...item, status: 1 } : item))
+    const handleStatus = (item) => {
+        axios.put('/todos/' + item.id, {
+            title: item.title,
+            details: item.details,
+            priority: item.priority,
+            status: item.status == 0 ? 1 : 0,
+            duedate: item.duedate
+        }).then(
+            (res) => {
+                getData();
+                console.log('success');
+            }
+        )
     }
 
-    const handleStatusInvert = (id) => {
-   
-        settodoData(todoData.map((item) =>
-            item.id === id ? { ...item, status: 0 } : item))
-    } */
-
+ 
 
 
 
@@ -41,11 +46,11 @@ const List = ({ NavLink, todoData, allValues }) => {
         <div className='listingArea'>
             <div className='container-fluid'>
                 <div className='row'>
-                    <div className='col-sm-12 col-md-12 p-3'>
+                    {/* <div className='col-sm-12 col-md-12 p-3'>
                         <NavLink to="/add">
                             <div className='addHelpButton'><MdAdd /></div>
                         </NavLink>
-                    </div>
+                    </div> */}
                     <div className='col-sm-12 col-md-4 maxWidthTable'>
                         <table class="table table-dark">
                             <thead>
@@ -59,7 +64,7 @@ const List = ({ NavLink, todoData, allValues }) => {
                             <tbody className='modifyTable'>
                                 {filterComplete(todoData).map(item => (
 
-                                    <tr key={item.id} className={item.status === 1 && 'bg-new'} >
+                                    <tr onDoubleClick={() => handleStatus(item)} key={item.id} className={item.status === 1 && 'bg-new'} >
                                         <td className='modifyTableTD'>{item.priority == 2 ? <span className='priorityBasic pb-high'>H</span> : (item.priority == 1) ? <span className='priorityBasic pb-med'>M</span> : <span className='priorityBasic pb-low'>L</span>}</td>
                                         <td scope="col-6">#{item.id} {item.title}</td>
                                         <td><Moment date={item.duedate} fromNow /></td>
@@ -87,7 +92,7 @@ const List = ({ NavLink, todoData, allValues }) => {
                             <tbody className='modifyTable'>
                                 {filterComplete2(todoData).map(item => (
 
-                                    <tr key={item.id} className={item.status == 1 && 'bg-new'} >
+                                    <tr onDoubleClick={() => handleStatus(item)} key={item.id} className={item.status == 1 && 'bg-new'} >
 
                                         <td scope="col-6">#{item.id} {item.title}</td>
 

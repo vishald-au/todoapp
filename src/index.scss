@@ -458,6 +458,7 @@ tr {
   transition: all .3s ease;
   cursor: pointer;
   color: rgba(255,255,255,.5);
+  float:left;
 }
 .text-center {text-align: center;}
 
@@ -472,7 +473,49 @@ tr {
   background: rgba(139, 195, 74, .1) !important;
 }
 
- 
+ .submitBtn2 {
+  background: transparent;
+  border:0;
+  color:#fff;
+  float: right;
+  border-bottom: 1px solid orange;
+}
+
+$grey: rgba(255,255,255,.05);
+
+.block-wrap {
+  width: 400px;
+  margin:40px 0;
+  animation: newanni 1.5s infinite;
+}
+
+@keyframes newanni {
+
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  51% {opacity: 0;}
+  100% {opacity: 1;}
+  
+}
+.block-heading {
+  width: 100%;
+  background: $grey;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.block-text {
+  width: 100%;
+  background: $grey;
+  height: 15px;
+  margin-bottom: 10px;
+}
+.block-text-half {
+  width: 50%;
+  background: $grey;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
 
 
 @media (max-width:560px) {

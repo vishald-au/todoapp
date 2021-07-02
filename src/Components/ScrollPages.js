@@ -1,6 +1,7 @@
 import Main from './Main'
 import List from './List'
 import Add from './Add'
+import Loading from './Loading'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 
@@ -11,20 +12,21 @@ const ScrollPages = ({ Route, NavLink }) => {
     const [todoData, setTodoData] = useState(false)
     const [isLoading, setLoading] = useState(true)
 
-
+const getData = () => {
+    axios.get('/todos').then(
+        (res) => {
+            setTodoData(res.data);
+            setLoading(false);
+        }
+    )
+}
 
     useEffect(() => {
-        axios.get('/todos').then(
-            (res) => {
-                console.log(res.data);
-                setTodoData(res.data);
-                setLoading(false);
-            }
-        )
+        getData()
     }, [])
 
     if (isLoading) {
-        return <>Loading...</>
+        return <Loading />
     }
 
     const allValues = {
@@ -39,10 +41,10 @@ const ScrollPages = ({ Route, NavLink }) => {
         <>
             {/*  <button onClick={getTodo}>GET DATA</button> */}
             <Route path='/all'>
-                <List NavLink={NavLink} todoData={todoData} allValues={allValues} />
+                <List todoData={todoData} allValues={allValues} getData={getData} />
             </Route>
             <Route path='/add'>
-                <Add />
+                <Add getData={getData} allValues={allValues} />
             </Route>
             <Route path='/priority'>
                 Priority

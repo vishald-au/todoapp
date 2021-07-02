@@ -1,148 +1,204 @@
 {
   "todos": [
     {
-      "id": 1,
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 2
     },
     {
-      "id": 3,
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "1",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 1,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 3
     },
     {
-      "id": 4,
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 4
     },
     {
-      "id": 5,
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 5
     },
     {
-      "id": 6,
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "1",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 1,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 6
     },
     {
-      "id": 7,
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 7
     },
     {
-      "id": 8,
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 8
     },
     {
-      "id": 9,
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 9
     },
     {
-      "id": 10,
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 10
     },
     {
-      "id": 11,
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 11
     },
     {
-      "id": 12,
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "1",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 1,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 12
     },
     {
-      "id": 13,
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 13
     },
     {
-      "id": 14,
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 14
     },
     {
-      "id": 15,
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "2",
-      "status": "0",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 2,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 15
     },
     {
-      "id": 16,
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 1,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 16
     },
     {
-      "id": 17,
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "priority": 0,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 17
     },
     {
-      "id": 18,
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "priority": 0,
+      "status": 0,
+      "duedate": "2022-04-23T18:25:43.511Z",
+      "id": 18
+    },
+    {
+      "title": "New Task",
+      "details": "\nAll the details are here",
+      "priority": 1,
+      "status": 1,
+      "duedate": "2021-07-28T14:30:00.000Z",
+      "id": 19
+    },
+    {
+      "title": "Doctor Appointment",
+      "details": "We’ll demonstrate how to make HTTP requests using Axios ",
+      "priority": 1,
+      "status": 0,
+      "duedate": "2022-07-02T14:30:00.000Z",
+      "id": 20
+    },
+    {
+      "title": "HTTP requests",
+      "details": "how to send multiple requests",
       "priority": "0",
-      "status": "1",
-      "duedate": "2022-04-23T18:25:43.511Z"
+      "status": 0,
+      "duedate": "2021-08-26T14:30:00.000Z",
+      "id": 21
+    },
+    {
+      "title": "HTTP requests",
+      "details": "how to send multiple requests",
+      "priority": "0",
+      "status": 0,
+      "duedate": "2021-08-26T14:30:00.000Z",
+      "id": 22
+    },
+    {
+      "title": "Browser support",
+      "details": "When it comes to browser support, Axios is very reliable. Even older browsers such as IE 11 work well with Axios.",
+      "priority": "2",
+      "status": 1,
+      "duedate": "2021-07-15T14:30:00.000Z",
+      "id": 23
+    },
+    {
+      "title": "Wrapping up",
+      "details": "we’ve taken a good look at several key features.",
+      "priority": 1,
+      "status": 0,
+      "duedate": "2021-07-08T14:30:00.000Z",
+      "id": 24
+    },
+    {
+      "title": "Popular Axios libraries",
+      "details": "third-party libraries that extend its functionality",
+      "priority": "1",
+      "status": 0,
+      "duedate": "2021-07-22T14:30:00.000Z",
+      "id": 25
     }
   ]
 }
