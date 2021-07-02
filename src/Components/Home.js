@@ -24,7 +24,7 @@ const Home = () => {
 
     return (
         <>
-            {/* <Dashboard /> */}
+       
                         {!isSignedIn ?
                 <div className='home'>
                 
@@ -39,7 +39,7 @@ const Home = () => {
                         className='googleStyle'
                         theme='light'
                     /> 
-                 
+                
                 </div> : <>
                     <Dashboard />
                 </>
