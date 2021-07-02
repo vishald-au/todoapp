@@ -403,11 +403,11 @@ button {
   background: transparent;
   border: 0;
 }
-.markButton {
-  font-size:13px
+.markButton:hover {
+  color:green;
 }
- 
 .markButton {
+  font-size:13px;
   color:white;
 }
 
@@ -541,6 +541,8 @@ $grey: rgba(255,255,255,.05);
   float: right;
   color:rgba(255, 255, 255, .5);
 }
+
+
 @media (max-width:560px) {
   .mobilePadding {
     padding: 30px 30px 0;

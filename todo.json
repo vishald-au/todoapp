@@ -12,7 +12,7 @@
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 0,
-      "status": 0,
+      "status": 1,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 2
     },
@@ -108,7 +108,7 @@
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 14
     },
@@ -116,7 +116,7 @@
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 15
     },
@@ -124,7 +124,7 @@
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 0,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 16
     },
@@ -132,7 +132,7 @@
       "title": "Plan to plan",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 0,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 17
     },
