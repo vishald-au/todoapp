@@ -191,7 +191,7 @@ input[type='range']::-webkit-slider-thumb {
   text-transform: capitalize;
 }
 
-.eqHeights {}
+
 .seperator {
   border-right:1px solid #545454;
 }
@@ -550,6 +550,14 @@ $grey: rgba(255,255,255,.05);
   max-width: 45px;
   margin-bottom: 20px;
   filter: grayscale(1);
+  animation: newlogo 3s infinite;
+}
+
+@keyframes newlogo {
+  0% {filter: grayscale(0);}
+  50% {filter: grayscale(1);}
+  100% {filter: grayscale(0);}
+  
 }
 
 .googleStyle div {
@@ -566,6 +574,18 @@ $grey: rgba(255,255,255,.05);
   color: white !important;
   padding: 0 7px 0 0 !important;
 }
+
+
+ 
+.controlCard {
+  max-width: 300px;
+}
+
+.cardArea img {
+  max-width: 100px;
+  border-radius: 15px;
+}
+
 
 @media (max-width:560px) {
   .mobilePadding {

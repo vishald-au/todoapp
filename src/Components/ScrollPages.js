@@ -2,6 +2,7 @@ import Main from './Main'
 import List from './List'
 import Add from './Add'
 import Loading from './Loading'
+import Profile from './Profile'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
 
@@ -56,7 +57,7 @@ const getData = () => {
                 Calendar
             </Route>
             <Route path='/profile'>
-                Profile
+                <Profile />
             </Route>
             <Route path='/settings'>
                 Settings
