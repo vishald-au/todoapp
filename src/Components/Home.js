@@ -28,7 +28,7 @@ const Home = () => {
             {!isSignedIn ?
                 <div className='home'>
 
-                    <img className='logoStyle' src='../img/t-logo.png' />
+                    <img className='logoStyle' src='../img/t-logo.png' alt='Logo' />
                     <GoogleLogin
                         clientId={googleId}
                         buttonText="Login with Google"
