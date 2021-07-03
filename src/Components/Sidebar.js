@@ -30,7 +30,7 @@ const Sidebar = ({ NavLink }) => {
                         <li className='nav-item'><NavLink exact to="/priority" activeClassName='active' className='nav-link py-3 border-bottom'><MdChangeHistory /></NavLink></li>
                         <li className='nav-item'><NavLink exact to="/add" activeClassName='active' className='nav-link py-3 border-bottom'><VscAdd /></NavLink></li>
                         <li className='nav-item'><NavLink exact to="/search" activeClassName='active' className='nav-link py-3 border-bottom'><RiSearchLine /></NavLink></li>
-                        <li className='nav-item'><NavLink exact to="/calendar" activeClassName='active' className='nav-link py-3 border-bottom'><HiOutlineCalendar /></NavLink></li>
+                        {/* <li className='nav-item'><NavLink exact to="/calendar" activeClassName='active' className='nav-link py-3 border-bottom'><HiOutlineCalendar /></NavLink></li> */}
                     </ul>
                     <div className='dropdown border-top text-center'>
                         <NavLink exact to="/profile" activeClassName='active' className='nav-link py-3 nav-profile'><img src={userData ? userData.imageUrl : 'https://github.com/mdo.png'} alt={userData ? userData.imageUrl : 'Profile Img'} width='24' height='24' className='rounded-circle' /></NavLink>

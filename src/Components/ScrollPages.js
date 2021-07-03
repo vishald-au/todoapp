@@ -3,7 +3,8 @@ import List from './List'
 import Add from './Add'
 import Loading from './Loading'
 import Profile from './Profile'
-import CalendarPage from './CalendarPage'
+import Priority from './Priority'
+import Search from './Search'
 import Settings from './Settings'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
@@ -15,14 +16,14 @@ const ScrollPages = ({ Route, NavLink }) => {
     const [todoData, setTodoData] = useState(false)
     const [isLoading, setLoading] = useState(true)
 
-const getData = () => {
-    axios.get('/todos').then(
-        (res) => {
-            setTodoData(res.data);
-            setLoading(false);
-        }
-    )
-}
+    const getData = () => {
+        axios.get('/todos').then(
+            (res) => {
+                setTodoData(res.data);
+                setLoading(false);
+            }
+        )
+    }
 
     useEffect(() => {
         getData()
@@ -50,13 +51,10 @@ const getData = () => {
                 <Add getData={getData} allValues={allValues} />
             </Route>
             <Route path='/priority'>
-                Priority
+                <Priority todoData={todoData} allValues={allValues} getData={getData} />
             </Route>
             <Route path='/search'>
-                Search
-            </Route>
-            <Route path='/calendar'>
-                <CalendarPage />
+                <Search todoData={todoData} getData={getData} />
             </Route>
             <Route path='/profile'>
                 <Profile />

@@ -32,15 +32,12 @@ const List = ({ todoData, allValues, getData }) => {
     const filterComplete = () => {
         return todoData.filter(
             (item) =>
+                item.priority == 2 &&
                 item.status == 0
+
         )
     }
-    const filterComplete2 = () => {
-        return todoData.filter(
-            (item) =>
-                item.status == 1
-        )
-    }
+
 
     const handleStatus = (item) => {
         axios.put('/todos/' + item.id, {
@@ -91,32 +88,7 @@ const List = ({ todoData, allValues, getData }) => {
                             </tbody>
                         </table>
                     </div>
-                    <div className='col-sm-12 col-md-4 maxWidthTable2'>
-                        <table className='table table-dark'>
-                            <thead>
-                                <tr className='modifyHead'>
 
-
-                                    <th scope='col'>Complete</th>
-
-
-                                </tr>
-                            </thead>
-                            <tbody className='modifyTable'>
-                                {filterComplete2(todoData).map(item => (
-
-                                    <tr onDoubleClick={() => openPop(item)} key={item.id} className={item.status == 1 && 'bg-new'} >
-
-                                        <td scope='col-6'>#{item.id} {item.title} <button onClick={() => handleStatus(item)} className='assignBack'><RiArrowGoBackFill /></button></td>
-
-
-                                    </tr>
-
-
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
                     <div className='col-sm-12 col-md-4'>
                         <QuickGraph allValues={allValues} />
                     </div>

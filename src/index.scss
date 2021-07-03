@@ -598,7 +598,15 @@ $grey: rgba(255,255,255,.05);
 .font-size-small {font-size: 12px;}
 .font-size-small ul li {cursor: pointer;}
 
-
+.searchInput {
+  background: transparent;
+  border: 1px solid #414141;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  height: 45px;
+}
 
 
 @media (max-width:560px) {

@@ -1,18 +1,14 @@
 import { GoCheck } from 'react-icons/go'
-import { RiArrowGoBackFill } from 'react-icons/ri'
 import { useState } from 'react';
 import Moment from 'react-moment';
-import QuickGraph from './QuickGraph'
 import Popup from './Popup'
 import axios from 'axios';
 
-
-
-const List = ({ todoData, allValues, getData }) => {
+const Search = ({ todoData, getData }) => {
 
     const [showPop, setShowPop] = useState(false)
-
     const [popData, setPopData] = useState([])
+    const [search, setSearch] = useState()
 
     const openPop = (item) => {
         setShowPop(true)
@@ -32,13 +28,8 @@ const List = ({ todoData, allValues, getData }) => {
     const filterComplete = () => {
         return todoData.filter(
             (item) =>
-                item.status == 0
-        )
-    }
-    const filterComplete2 = () => {
-        return todoData.filter(
-            (item) =>
-                item.status == 1
+                item.status === 0 &&
+                item.title.toLowerCase().includes(search)
         )
     }
 
@@ -64,17 +55,13 @@ const List = ({ todoData, allValues, getData }) => {
         <div className='listingArea'>
             <div className='container-fluid'>
                 <div className='row'>
-                    <div className='col-sm-12 col-md-4 maxWidthTable'>
+                    <div className='col-sm-12 col-md-4 maxWidthTable pt-4'>
+                        <input placeholder='Search here...' className='searchInput' value={search} onChange={(e) => setSearch(e.target.value.toLowerCase())} />
                         <table className='table table-dark'>
-                            <thead>
-                                <tr className='modifyHead'>
-
-                                    <th scope='col'>Todo</th>
 
 
-                                </tr>
-                            </thead>
                             <tbody className='modifyTable'>
+
                                 {filterComplete(todoData).map(item => (
 
                                     <tr onDoubleClick={() => openPop(item)} key={item.id} className={item.status === 1 && 'bg-new'} >
@@ -91,35 +78,6 @@ const List = ({ todoData, allValues, getData }) => {
                             </tbody>
                         </table>
                     </div>
-                    <div className='col-sm-12 col-md-4 maxWidthTable2'>
-                        <table className='table table-dark'>
-                            <thead>
-                                <tr className='modifyHead'>
-
-
-                                    <th scope='col'>Complete</th>
-
-
-                                </tr>
-                            </thead>
-                            <tbody className='modifyTable'>
-                                {filterComplete2(todoData).map(item => (
-
-                                    <tr onDoubleClick={() => openPop(item)} key={item.id} className={item.status == 1 && 'bg-new'} >
-
-                                        <td scope='col-6'>#{item.id} {item.title} <button onClick={() => handleStatus(item)} className='assignBack'><RiArrowGoBackFill /></button></td>
-
-
-                                    </tr>
-
-
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className='col-sm-12 col-md-4'>
-                        <QuickGraph allValues={allValues} />
-                    </div>
 
                     <Popup showPop={showPop} popData={popData} closePop={closePop} Moment={Moment} />
 
@@ -132,4 +90,4 @@ const List = ({ todoData, allValues, getData }) => {
     )
 }
 
-export default List 
+export default Search 

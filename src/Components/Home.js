@@ -24,12 +24,12 @@ const Home = () => {
 
     return (
         <>
-       
-                        {!isSignedIn ?
+
+            {!isSignedIn ?
                 <div className='home'>
-                
-                        <img className='logoStyle' src='../img/t-logo.png' />
-                        <GoogleLogin
+
+                    <img className='logoStyle' src='../img/t-logo.png' />
+                    <GoogleLogin
                         clientId={googleId}
                         buttonText="Login with Google"
                         onSuccess={responseGoogle}
@@ -38,8 +38,8 @@ const Home = () => {
                         isSignedIn={false}
                         className='googleStyle'
                         theme='light'
-                    /> 
-                
+                    />
+
                 </div> : <>
                     <Dashboard />
                 </>

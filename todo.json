@@ -28,7 +28,7 @@
       "title": "Be intentional with unfinished tasks",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 0,
-      "status": 0,
+      "status": 1,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 4
     },
@@ -44,7 +44,7 @@
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 1,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 6
     },
@@ -52,7 +52,7 @@
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 0,
+      "status": 1,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 7
     },
@@ -60,7 +60,7 @@
       "title": "Have a top three",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 8
     },
@@ -92,7 +92,7 @@
       "title": "Consider an if list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 1,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 12
     },
@@ -100,7 +100,7 @@
       "title": "Have a master list",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 1,
+      "status": 0,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 13
     },
@@ -116,7 +116,7 @@
       "title": "Break it down and be specific",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "priority": 2,
-      "status": 0,
+      "status": 1,
       "duedate": "2022-04-23T18:25:43.511Z",
       "id": 15
     },
@@ -199,6 +199,46 @@
       "status": 0,
       "duedate": "2021-07-22T14:30:00.000Z",
       "id": 25
+    },
+    {
+      "title": "Shilpi Driving",
+      "details": "Tomorrow",
+      "priority": "2",
+      "status": 0,
+      "duedate": "2021-07-08T14:30:00.000Z",
+      "id": 26
+    },
+    {
+      "title": "xxx",
+      "details": "xxx",
+      "priority": "0",
+      "status": 0,
+      "duedate": "2021-07-02T10:29:40.184Z",
+      "id": 27
+    },
+    {
+      "title": "aa",
+      "details": "aa",
+      "priority": "2",
+      "status": "",
+      "duedate": "2021-07-14T14:30:00.000Z",
+      "id": 28
+    },
+    {
+      "title": "aa",
+      "details": "aa",
+      "priority": "2",
+      "status": "0",
+      "duedate": "2021-07-14T14:30:00.000Z",
+      "id": 29
+    },
+    {
+      "title": "n",
+      "details": "n",
+      "priority": 1,
+      "status": 0,
+      "duedate": "2021-07-03T15:33:44.189Z",
+      "id": 30
     }
   ]
 }
