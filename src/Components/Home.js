@@ -1,6 +1,6 @@
 import GoogleLogin from 'react-google-login';
 import { useDispatch, useSelector } from 'react-redux'
-import { selectSignedIn, selectUserData, setSignedIn, setUserData } from '../userSlice';
+import { selectSignedIn, setSignedIn, setUserData } from '../userSlice';
 import Dashboard from './Dashboard'
 
 const Home = () => {
