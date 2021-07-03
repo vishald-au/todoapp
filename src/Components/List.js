@@ -32,13 +32,13 @@ const List = ({ todoData, allValues, getData }) => {
     const filterComplete = () => {
         return todoData.filter(
             (item) =>
-                item.status == 0
+                item.status === 0
         )
     }
     const filterComplete2 = () => {
         return todoData.filter(
             (item) =>
-                item.status == 1
+                item.status === 1
         )
     }
 
@@ -47,7 +47,7 @@ const List = ({ todoData, allValues, getData }) => {
             title: item.title,
             details: item.details,
             priority: item.priority,
-            status: item.status == 0 ? 1 : 0,
+            status: item.status === 0 ? 1 : 0,
             duedate: item.duedate
         }).then(
             (res) => {
@@ -78,8 +78,8 @@ const List = ({ todoData, allValues, getData }) => {
                                 {filterComplete(todoData).map(item => (
 
                                     <tr onDoubleClick={() => openPop(item)} key={item.id} className={item.status === 1 && 'bg-new'} >
-                                        <td className='modifyTableTD'>{item.priority == 2 ? <span className='priorityBasic pb-high'>H</span> : (item.priority == 1) ? <span className='priorityBasic pb-med'>M</span> : <span className='priorityBasic pb-low'>L</span>}</td>
-                                        <td scope='col-6'>#{item.id} {item.title}</td>
+                                        <td className='modifyTableTD'>{item.priority === 2 ? <span className='priorityBasic pb-high'>H</span> : (item.priority === 1) ? <span className='priorityBasic pb-med'>M</span> : <span className='priorityBasic pb-low'>L</span>}</td>
+                                        <td>#{item.id} {item.title}</td>
                                         <td><Moment date={item.duedate} fromNow /></td>
                                         <td className='text-right newHover'><button onClick={() => handleStatus(item)} className='markButton'><GoCheck /></button></td>
                                     </tr>
@@ -105,9 +105,9 @@ const List = ({ todoData, allValues, getData }) => {
                             <tbody className='modifyTable'>
                                 {filterComplete2(todoData).map(item => (
 
-                                    <tr onDoubleClick={() => openPop(item)} key={item.id} className={item.status == 1 && 'bg-new'} >
+                                    <tr onDoubleClick={() => openPop(item)} key={item.id} className={item.status === 1 && 'bg-new'} >
 
-                                        <td scope='col-6'>#{item.id} {item.title} <button onClick={() => handleStatus(item)} className='assignBack'><RiArrowGoBackFill /></button></td>
+                                        <td>#{item.id} {item.title} <button onClick={() => handleStatus(item)} className='assignBack'><RiArrowGoBackFill /></button></td>
 
 
                                     </tr>

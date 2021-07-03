@@ -3,7 +3,7 @@ import React from 'react'
 const Popup = ({ showPop, popData, closePop, Moment }) => {
     return (
         <>
-            <div className={showPop == true ? 'modal bg-blur active' : 'modal bg-blur'} tabindex='-1'>
+            <div className={showPop === true ? 'modal bg-blur active' : 'modal bg-blur'} tabindex='-1'>
                 <div className='modal-dialog modal-dialog-centered'>
                     <div className='modal-content bg-light text-dark'>
                         <div className='modal-header'>

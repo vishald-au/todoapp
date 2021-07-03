@@ -7,7 +7,7 @@ const Home = () => {
 
     const dispatch = useDispatch()
     const isSignedIn = useSelector(selectSignedIn)
-    const userData = useSelector(selectUserData)
+    //   const userData = useSelector(selectUserData)
 
     const responseGoogle = (res) => {
         console.log(res);

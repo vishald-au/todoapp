@@ -66,7 +66,7 @@ const Graph: React.FC = ({ allValues }) => {
         ]
     };
 
-    const newDate = new Date().toDateString();
+    /*  const newDate = new Date().toDateString(); */
     return (
 
         <div className='row m-0'>

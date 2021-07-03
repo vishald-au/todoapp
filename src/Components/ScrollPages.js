@@ -35,10 +35,10 @@ const ScrollPages = ({ Route, NavLink }) => {
 
     const allValues = {
         all: todoData.length,
-        high: todoData.filter((highitem) => highitem.priority == 2).length,
-        med: todoData.filter((highitem) => highitem.priority == 1).length,
-        low: todoData.filter((highitem) => highitem.priority == 0).length,
-        comp: todoData.filter((highitem) => highitem.status == 1).length
+        high: todoData.filter((highitem) => highitem.priority === 2).length,
+        med: todoData.filter((highitem) => highitem.priority === 1).length,
+        low: todoData.filter((highitem) => highitem.priority === 0).length,
+        comp: todoData.filter((highitem) => highitem.status === 1).length
     }
 
     return (
