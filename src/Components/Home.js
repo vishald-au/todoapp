@@ -19,7 +19,7 @@ const Home = () => {
     }
 
 
-    const googleId = '496571883606-kpsmdtp5ua1m8n21ccak8q6nvnnlp8id.apps.googleusercontent.com'
+    const googleId = '496571883606-82lsm43keuqf673vrjdnrietll9lrl80.apps.googleusercontent.com'
 
 
     return (
