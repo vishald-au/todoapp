@@ -25,25 +25,8 @@ const Home = () => {
     return (
         <>
 
-            {!isSignedIn ?
-                <div className='home'>
+            <Dashboard />
 
-                    <img className='logoStyle' src='../img/t-logo.png' alt='Logo' />
-                    <GoogleLogin
-                        clientId={googleId}
-                        buttonText="Login with Google"
-                        onSuccess={responseGoogle}
-                        onFailure={responseFail}
-                        cookiePolicy={'single_host_origin'}
-                        isSignedIn={false}
-                        className='googleStyle'
-                        theme='light'
-                    />
-
-                </div> : <>
-                    <Dashboard />
-                </>
-            }
 
         </>
     )
