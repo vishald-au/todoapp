@@ -20,7 +20,7 @@ const ScrollPages = ({ Route, NavLink }) => {
         axios.get('/todos').then(
             (res) => {
                 setTodoData(res.data);
-                //    setLoading(false);
+                setLoading(false);
             }
         )
     }
