@@ -31,7 +31,7 @@ const Sidebar = ({ NavLink }) => {
                         {/* <li className='nav-item'><NavLink exact to="/calendar" activeClassName='active' className='nav-link py-3 border-bottom'><HiOutlineCalendar /></NavLink></li> */}
                     </ul>
                     <div className='dropdown border-top text-center'>
-                        <NavLink exact to="/profile" activeClassName='active' className='nav-link py-3 nav-profile'><img src={userData ? userData.imageUrl : 'https://github.com/mdo.png'} alt={userData ? userData.imageUrl : 'Profile Img'} width='24' height='24' className='rounded-circle' /></NavLink>
+                        <NavLink exact to="/settings" activeClassName='active' className='nav-link py-3 nav-profile'><img src={userData ? userData.imageUrl : 'https://github.com/mdo.png'} alt={userData ? userData.imageUrl : 'Profile Img'} width='24' height='24' className='rounded-circle' /></NavLink>
                         <ul className='nav nav-pills nav-flush flex-column mb-auto text-center'>
                             <li className='nav-item'><NavLink exact to="/settings" activeClassName='active' className='nav-link py-3 border-top'><VscSettings /></NavLink></li>
                             <li className='nav-item'><button onClick={handleLogout} className='nav-link py-3 border-top'><FiLock /></button></li>
