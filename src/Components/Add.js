@@ -13,15 +13,15 @@ const Add = ({getData, allValues}) => {
     const [inputStatus, setInputStatus] = useState(0)
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        const allData = {
-            title: inputTask,
-            details: inputDetails,
-            priority: inputPriority,
-            status: inputStatus,
-            duedate: value
-        }
-        axios.post('/todos', allData).then(
+      e.preventDefault();
+      const allData = {
+        title: inputTask,
+        details: inputDetails,
+        priority: inputPriority,
+        status: inputStatus,
+        duedate: value,
+      };
+      /* axios.post('/todos', allData).then(
             (res) => {
                 console.log('posted')
                 getData();
@@ -30,7 +30,7 @@ const Add = ({getData, allValues}) => {
                 setInputDetails('')
                 setInputTask('')
             }
-        )
+        ) */
     }
 
 

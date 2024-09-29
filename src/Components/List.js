@@ -43,7 +43,7 @@ const List = ({ todoData, allValues, getData }) => {
     }
 
     const handleStatus = (item) => {
-        axios.put('/todos/' + item.id, {
+      /* axios.put('/todos/' + item.id, {
             title: item.title,
             details: item.details,
             priority: item.priority,
@@ -54,7 +54,8 @@ const List = ({ todoData, allValues, getData }) => {
                 getData();
                 console.log('success');
             }
-        )
+        ) */
+      getData();
     }
 
 

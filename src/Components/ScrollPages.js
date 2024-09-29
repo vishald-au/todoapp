@@ -11,7 +11,7 @@ import React, { useState, useEffect } from 'react';
 import { todos } from './todo';
 
 const ScrollPages = ({ Route, NavLink }) => {
-  axios.defaults.baseURL = 'https://my-new-server-app.herokuapp.com/';
+  // axios.defaults.baseURL = 'https://my-new-server-app.herokuapp.com/';
 
   const [todoData, setTodoData] = useState(false);
   const [isLoading, setLoading] = useState(true);
