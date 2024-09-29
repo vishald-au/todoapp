@@ -12,13 +12,6 @@ const Add = ({ getData, allValues }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const allData = {
-      title: inputTask,
-      details: inputDetails,
-      priority: inputPriority,
-      status: inputStatus,
-      duedate: value,
-    };
     getData();
   };
 
