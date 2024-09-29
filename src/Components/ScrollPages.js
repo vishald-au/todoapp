@@ -8,7 +8,7 @@ import Search from './Search'
 import Settings from './Settings'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
-import { todos } from './todo.json';
+import { todos } from '../todo.json';
 
 const ScrollPages = ({ Route, NavLink }) => {
   // axios.defaults.baseURL = 'https://my-new-server-app.herokuapp.com/';
