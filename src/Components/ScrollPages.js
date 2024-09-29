@@ -14,7 +14,7 @@ const ScrollPages = ({ Route, NavLink }) => {
     axios.defaults.baseURL = 'https://my-new-server-app.herokuapp.com/'
 
     const [todoData, setTodoData] = useState(false)
-    const [isLoading, setLoading] = useState(false);
+    const [isLoading, setLoading] = useState(true);
 
     const getData = () => {
         axios.get('/todos').then(
