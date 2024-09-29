@@ -5,22 +5,15 @@ import Loading from './Loading'
 import Profile from './Profile'
 import Priority from './Priority'
 import Search from './Search'
-import Settings from './Settings'
-import axios from 'axios'
+import Settings from './Settings';
 import React, { useState, useEffect } from 'react';
 import { todos } from '../todo.json';
 
 const ScrollPages = ({ Route, NavLink }) => {
-  // axios.defaults.baseURL = 'https://my-new-server-app.herokuapp.com/';
-
   const [todoData, setTodoData] = useState(false);
   const [isLoading, setLoading] = useState(true);
 
   const getData = () => {
-    /* axios.get('/todos').then((res) => {
-      setTodoData(res.data);
-      setLoading(false);
-    }); */
     setTodoData(todos);
     setLoading(false);
   };

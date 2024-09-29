@@ -2,10 +2,7 @@ import { GoCheck } from 'react-icons/go'
 import { useState } from 'react';
 import Moment from 'react-moment';
 import QuickGraph from './QuickGraph'
-import Popup from './Popup'
-import axios from 'axios';
-
-
+import Popup from './Popup';
 
 const List = ({ todoData, allValues, getData }) => {
 
@@ -39,20 +36,8 @@ const List = ({ todoData, allValues, getData }) => {
 
 
     const handleStatus = (item) => {
-      /* axios.put('/todos/' + item.id, {
-            title: item.title,
-            details: item.details,
-            priority: item.priority,
-            status: item.status === 0 ? 1 : 0,
-            duedate: item.duedate
-        }).then(
-            (res) => {
-                getData();
-                console.log('success');
-            }
-        ) */
       getData();
-    }
+    };
 
 
 

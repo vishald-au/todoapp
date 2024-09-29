@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Moment from 'react-moment';
 import Calendar from 'react-calendar';
-import axios from 'axios';
 import Popup from './Popup'
 import { GoCheck } from 'react-icons/go'
 
@@ -36,20 +35,8 @@ const CalendarPage = ({ todoData, getData }) => {
 
 
     const handleStatus = (item) => {
-      /* axios.put('/todos/' + item.id, {
-            title: item.title,
-            details: item.details,
-            priority: item.priority,
-            status: item.status == 0 ? 1 : 0,
-            duedate: item.duedate
-        }).then(
-            (res) => {
-                getData();
-                console.log('success');
-            }
-        ) */
       getData();
-    }
+    };
 
 
 
