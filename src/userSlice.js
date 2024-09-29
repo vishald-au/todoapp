@@ -1,23 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const userSlice = createSlice({
-    name: 'user',
-    initialState: {
-        isSignedIn: false,
-        userData: null,
-        allData: null,
+  name: 'user',
+  initialState: {
+    isSignedIn: true,
+    userData: null,
+    allData: null,
+  },
+  reducers: {
+    setSignedIn: (state, action) => {
+      state.isSignedIn = action.payload;
     },
-    reducers: {
-        setSignedIn: (state, action) => {
-            state.isSignedIn = action.payload;
-        },
-        setUserData: (state, action) => {
-            state.userData = action.payload;
-        },
-        setAllData: (state, action) => {
-            state.allData = action.payload;
-        },
-    }
+    setUserData: (state, action) => {
+      state.userData = action.payload;
+    },
+    setAllData: (state, action) => {
+      state.allData = action.payload;
+    },
+  },
 });
 
 export const { setSignedIn, setUserData, setAllData } = userSlice.actions;
